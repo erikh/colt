@@ -2,6 +2,10 @@
 
 `colt` is a tool for getting terminal color codes. It uses a trivial syntax; aims to be similar to `tput` for terminals. Embed `colt` in shell scripts for maximum effect.
 
+## Install
+
+`go get github.com/erikh/colt`
+
 ## Example
 
 Pass a color to `colt` in a shell to print its terminal definition ("escape code"), like so:
