@@ -1,6 +1,6 @@
 # colt: a tool for getting terminal color codes
 
-`colt` is a tool for getting terminal color codes. It uses a trivial syntax; aims to be similar to `tput` for terminals. Embed `colt` in shells or use `colt env` to get all environment variables for your terminal definition in one easy way.
+`colt` is a tool for getting terminal color codes. It uses a trivial syntax; aims to be similar to `tput` for terminals. Embed `colt` in shell scripts for maximum effect.
 
 ## Example
 
@@ -14,7 +14,19 @@ echo "$(colt red)This is red text! $(colt blue on white)This is blue with a whit
 
 ## Syntax
 
-TBD
+There are three positions in the grammar that are relevant:
+
+Foreground is always in the first position.
+
+If you want to specify a background, specify it or use "on" to specify it with
+a bit more of an english twist.
+
+If you want to specify text attributes such as bold, underline, etc, specify them with "with", such as:
+
+```
+colt red with bold underline
+colt red on white with bold
+```
 
 ## Author
 
