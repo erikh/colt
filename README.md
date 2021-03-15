@@ -16,6 +16,8 @@ Pass a color to `colt` in a shell to print its terminal definition ("escape code
 echo "$(colt red)This is red text! $(colt blue on white)This is blue with a white background!"
 ```
 
+<img src="example.png" />
+
 ## Syntax
 
 There are three positions in the grammar that are relevant:
