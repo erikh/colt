@@ -68,7 +68,7 @@ func mkColor(foreground, background string, attrs []string) {
 }
 
 func help() {
-	fmt.Fprintln(os.Stderr, "This is help")
+	fmt.Fprintln(os.Stderr, "https://github.com/erikh/colt/blob/main/README.md")
 	os.Exit(1)
 }
 
